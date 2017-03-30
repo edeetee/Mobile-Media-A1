@@ -2,26 +2,32 @@
 <head>
 	<script src="jquery-3.2.0.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<script src="jquery.pin.js"></script>
-	<script src="index.js"></script>
+	<script src="skrollr.js"></script>
 </head>
 <body>
-	<div id="right-background"></div>
+	<div id="right-background">
+		<img class="phone" src="google_pixel_no_match.png"
+		data-_title="opacity: 0;"
+		data-_showphone--200="opacity: 1;">
+
+		<img class="phone" src="google_pixel_match_flask.png"
+		data-_showphone-200="opacity: 0;"
+		data-_takephoto--200="opacity: 1;">
+	</div>
 	<div id="red-background"></div>
+	<div id=title-container>
+		<div id="title"><h1>TE PAPA</h1><h2>Collection-Camera</h2></div>
+	</div>
+
 	<div class="column">
-		<div style="height: 30%"></div>
-		<div class="row">
-			<div class="row-middle"><h1>TE PAPA</h1><h2>Collection-Camera</h2></div>
+		<div class="row" id="showphone">
+			<i>Collection-Camera</i> is an interactive app that allows users to search the entire Te Papa Collections Online library using their phone camera.
 		</div>
-		<div class="row">
-			<div class="row-left"><i>Collection-Camera</i> is an interactive app that allows users to search the entire Te Papa Collections Online library using their phone camera.</div>
-			<div class="row-right" id="tagPhone1"><img class="pin" id="phone1" src="google_pixel.png"></div>
-		</div>
-		<div class="row">
-			<div class="row-left"><i>Collection-Camera</i> first</div>
-			<div class="row-right" id="tagTakePhoto"><img id="phone2" src="google_pixel.png"></div>
+		<div class="row" id="takephoto">
+			<i>Collection-Camera</i> first</div>
 		</div>
 	</div>
 
 </body>
+	<script src="index.js"></script>
 </html>
