@@ -69,16 +69,39 @@ body{
 .phone{
 	opacity: 0;
 	position: absolute;
-	height: 50%;
+	width: 60%;
 }
 
-#showPhone{
-
+#showphone{
+	margin-bottom: 30%
 }
 
-#takePhoto{
-	margin-top: 100%;
-	margin-bottom: 100%;
+#takephoto{
+	margin-bottom: 30%
+}
+
+#moreinfo{
+	margin-bottom: 30%
+}
+
+#disabledinfo{
+	margin-bottom: 30%
+}
+
+#hearingimpaired{
+	opacity: 0;
+	position: absolute;
+	width: 50%;
+}
+
+#footer-container{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+	background: #161925;
 }
 
 
@@ -86,8 +109,28 @@ body{
 	body{
 		font-size: 1em;
 	}
+}
 
+@media screen and (min-width: 1000px){
 	.phone{
-		height: 30%;
+		width: auto;
+		height: 70%;
 	}
 }
+
+/*pretty links*/
+
+a {
+  transition: color .4s;
+  color: #265C83;
+}
+
+a:link,
+a:visited { color: #265C83; }
+a:hover   { color: #7FDBFF; }
+a:active  {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+.link { text-decoration: none; }

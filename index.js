@@ -2,7 +2,7 @@ var constants = {};
 var s;
 
 $(function(argument) {
-	var constantIds = ["showphone", "title", "takephoto"];
+	var constantIds = ["showphone", "title", "takephoto", "moreinfo", "disabledinfo"];
 
 	$background = $("#right-background");
 
@@ -18,6 +18,20 @@ $(function(argument) {
 
 	s = skrollr.init({
 		constants: constants,
-		forceHeight: false
+		forceHeight: false,
+		smoothScrolling: false,
+		smoothScrollingDuration: 1000,
+		easing: {
+			linear: function(p){
+				p *= 2;
+				if (p < 1) return Math.pow( 2, 10 * (p - 1) )/2;
+				p--;
+				return ( -Math.pow( 2, -10 * p) + 2 )/2;
+			}
+		}
 	});
 });
+
+Math.easeInOutExpo = function (t) {
+	return Math.pow( 2, 10 * (t - 1) );
+};
