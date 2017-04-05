@@ -21,7 +21,6 @@ $(function(argument) {
 		forceHeight: false,
 		smoothScrolling: false,
 		smoothScrollingDuration: 1000,
-		skrollrBody: '#column',
 		easing: {
 			linear: function(p){
 				p *= 2;
