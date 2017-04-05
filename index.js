@@ -21,12 +21,13 @@ $(function(argument) {
 		forceHeight: false,
 		smoothScrolling: false,
 		smoothScrollingDuration: 1000,
+		skrollrBody: '#column',
 		easing: {
 			linear: function(p){
 				p *= 2;
-				if (p < 1) return Math.pow( 2, 10 * (p - 1) )/2;
+				if (p < 1) return Math.pow( 2, 100 * (p - 1) )/2;
 				p--;
-				return ( -Math.pow( 2, -10 * p) + 2 )/2;
+				return ( -Math.pow( 2, -100 * p) + 2 )/2;
 			}
 		}
 	});
