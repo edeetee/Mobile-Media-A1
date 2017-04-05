@@ -115,11 +115,12 @@ body{
 	width: 30%;
 }
 
-@media screen and (max-width:800dp){
+@media (max-width:800px){
 	#column{
 		width: 100%;
 		align-items: center;
 	}
+
 	.row{
 		margin-bottom: 20%;
 	}
