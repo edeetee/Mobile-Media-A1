@@ -33,24 +33,27 @@
 		</div>
 
 		<div id="column">
+			<img class="hidden-phone" src="google_pixel_no_match.png">
 			<div class="row" id="showphone">
 				<p><i>ArtLink</i> is an interactive app that allows users to search an entire art database using their phone camera.</p>
-				<p>It has a very minimal interface, only a large camera view and a little text card down the bottom. It is made to be simple and quick so that it seems like magic for the user.</p>
-				<p>The app will continually poll the servers or a local service (depending on efficientcy) with the most recent image to try find a match. Scroll to see what happens next.</p>
+				<p>It has a very minimal interface, only a large camera view and a little text card down the bottom. It is made to be quick and intuitive so that it seems like magic for the user.</p>
+				<p>The app will run very fast as searching can be calculated on a server, and the UI will not be heavy or slow to run.</p>
 			</div>
+			<img class="hidden-phone" src="google_pixel_match_flask.png">
 			<div class="row" id="takephoto">
-				<p>From polling every second, the app has found a viable match using the existing images in the Te Papa Collections database. It shows you some basic information on the bottom of the screen, as well as an actual image taken from the database.</p>
-				<p>The user can swipe up on the information at the bottom of the screen to get more information about this piece, in this example, 
+				<p>Using SIFT or another computer vision algorithm and an image database like Te Papa Collections, we can find a visual match. The live screen shows some basic information on the bottom of the screen, as well as the actual image matched in the database.</p>
+				<p>The user can tap or swipe up on the information at the bottom of the screen to get more information about this piece. Such as 
 				<a href="http://collections.tepapa.govt.nz/Object/1096437" target="_blank">A Flask from Te Papa Collections</a>
-
 			</div>
+			<img class="hidden-phone" src="google_pixel_more_flask.png">
 			<div class ="row" id="moreinfo">
-				<p>Here is the view from dragging or clicking on the last information panel. You can still see the live image feed in the background, however, while in this window, the app will not poll for new images. This design pattern is important as users don't want the whole page to disappear half way through reading.</p>
-				<p>It might also be a good idea to have a link to the collections web page or a link to some other </p>
+				<p>Here is the view from dragging or clicking on the last information panel. You can still see the live image feed in the background, but while in this window, the app will not poll for new images. This design consideration is important as users don't want the whole page to disappear halfway through reading.</p>
+				<p>It might also be helpful to generate other links related to this item here too</p>
 			</div>
+			<img id="hearingimpaired-hidden" src="vision_impaired.png">
 			<div class="row" id='disabledinfo'>
-				<p>The app will also have a feature for vision impaired. Through selecting an option, users can enable a dictation mode. Directing the camera around will dictate what the title is of the pieces is, and by clicking on the screen, it will give the listener more detailed information about the work.</p>
-				<p>If it was interested, here a tool could be added that continues my original idea of having the vision input feed into a maching learning alrogithm that ties semantic positioning to a few dimensions in audio, such as chords or pitch etc.</p>
+				<p>The app will also have a feature for vision impaired. Users can enable a dictation mode where directing the camera around will dictate titles of art pieces. By clicking on the screen or shaking the device, it will give the listener more detailed information about a work.</p>
+				<p><i>ArtLink</i> could be a hub for interactive art phone experiments too, one such idea includes having the video of the phone feed into a maching learning algorithm that ties semantic t-SNE positioning to a few dimensions in audio, such as chords, rhythm, progression; allowing a blind user to experience visual art through sound.</p>
 			</div>
 		</div>
 		<div id="footer-container">

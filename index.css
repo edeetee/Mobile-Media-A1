@@ -49,7 +49,7 @@ body{
 	text-align: right;
 	background: #161925;
 	width: 61.803398875%;
-	margin-bottom: 60%;
+	margin-bottom: 45%;
 }
 
 #title-container{
@@ -75,13 +75,17 @@ body{
 .phone{
 	opacity: 0;
 	position: absolute;
-	width: 60%;
+	height: 60%;
+}
+
+#disabledinfo{
+	margin-bottom: 30%;
 }
 
 #hearingimpaired{
 	opacity: 0;
 	position: absolute;
-	width: 50%;
+	height: 30%;
 }
 
 #footer-container{
@@ -97,19 +101,45 @@ body{
 #skrollr-body{
 	width: 100%;
 	height: 100%;
+	touch-action: auto;
 }
 
+.hidden-phone{
+	width: 50%;
+	display:none;
+	margin-bottom: 10%;
+}
 
-@media screen and (max-width: 900px){
-	body{
-		font-size: 1em;
+#hearingimpaired-hidden{
+	display:none;
+	width: 30%;
+}
+
+@media screen and (max-width:800dp){
+	#column{
+		width: 100%;
+		align-items: center;
+	}
+	.row{
+		margin-bottom: 20%;
+	}
+	
+	#right-background{
+		display: none;
+	}
+
+	.hidden-phone{
+		display: initial;
+	}
+
+	#hearingimpaired-hidden{
+		display: initial;
 	}
 }
 
-@media screen and (min-width: 1000px){
-	.phone{
-		width: auto;
-		height: 70%;
+@media screen and (max-width: 100px){
+	body{
+		font-size: 1em;
 	}
 }
 

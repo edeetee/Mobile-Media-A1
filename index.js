@@ -28,6 +28,9 @@ $(function(argument) {
 				p--;
 				return ( -Math.pow( 2, -10 * p) + 2 )/2;
 			}
+		},
+		mobileCheck: function(params) {
+			return false;
 		}
 	});
 });
